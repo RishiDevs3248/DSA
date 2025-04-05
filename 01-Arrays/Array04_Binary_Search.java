@@ -2,7 +2,7 @@ public class Array04_Binary_Search {
     public static void Binary_search(int array[],int target){
         int s = 0; 
         int e = array.length-1;
-        int mid = 0;
+        int mid ;
         while(s<=e){
             mid = (s+e)/2;
             if (target == array[mid]){
@@ -18,7 +18,7 @@ public class Array04_Binary_Search {
         }
         System.out.println("Not found");
     }
-    
+
     public static void main(String[] args) {
         int array[] = {1,2,3,4,5,6,7,8,9};
         // Binary_search(array,6);
