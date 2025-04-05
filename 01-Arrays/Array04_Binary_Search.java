@@ -25,3 +25,5 @@ public class Array04_Binary_Search {
         Binary_search(array,600);
     }
 }
+
+// Time complexity is O(log(n))
