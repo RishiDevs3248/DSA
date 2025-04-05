@@ -27,3 +27,4 @@ public class Array04_Binary_Search {
 }
 
 // Time complexity is O(log(n))
+// Space complexity is 0(n) cause of array used
