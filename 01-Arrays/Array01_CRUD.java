@@ -17,7 +17,6 @@ public class Array01_CRUD {
         // array[2] = sc.nextInt();
         // array[3] = sc.nextInt();
         
-
         // Print array value
         // System.out.println(array[0]);
         // System.out.println(array[1]);
