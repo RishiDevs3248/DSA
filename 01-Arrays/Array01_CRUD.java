@@ -23,7 +23,6 @@ public class Array01_CRUD {
         // System.out.println(array[2]);
         // System.out.println(array[3]);
 
-
         // Passing arrays as argument (pass by Reference) and not by (pass by value)
         int mark[] = {1,2,3,4,5};
         Update(mark);

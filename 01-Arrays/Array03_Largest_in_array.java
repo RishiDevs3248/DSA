@@ -17,6 +17,7 @@ public class Array03_Largest_in_array {
 
         return new int[]{largest,smallest};
     }
+    
     public static void main(String[] args) {
         int array[] = {1,2,4,3,6,7,9,5,3,5,2,4,0};
         System.out.println(LargestValue(array)[0]);
