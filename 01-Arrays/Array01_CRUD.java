@@ -1,17 +1,16 @@
 
-import java.util.Scanner;
 
 public class Array01_CRUD {
     public static void main(String[] args) {
         // Create 
-        int array[] = new int[100];
-        int array2[] = {1,2,3,4,5,6,7,8,9,0};
-        String words[] = {"ads","cin","xla"};
-        char alphabets[] = {'a','v','s'};
+        // int array[] = new int[100];
+        // int array2[] = {1,2,3,4,5,6,7,8,9,0};
+        // String words[] = {"ads","cin","xla"};
+        // char alphabets[] = {'a','v','s'};
 
 
         // input in array 
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         // array[0] = sc.nextInt();
         // array[1] = sc.nextInt();
         // array[2] = sc.nextInt();
