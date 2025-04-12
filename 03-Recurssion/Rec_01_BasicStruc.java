@@ -1,5 +1,7 @@
 public class Rec_01_BasicStruc {
 
+    //recursion fun
+
     public static void recFun(int x){
         // base condition
 
