@@ -48,7 +48,6 @@ public static void merge(int arr[], int si, int mid, int ei) {
             arr[i]=temp[k];
         }
         
-
     }
 
     public static void printArray(int arr[]) {
