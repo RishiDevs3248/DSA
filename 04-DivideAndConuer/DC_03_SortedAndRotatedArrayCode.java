@@ -17,6 +17,7 @@ public class DC_03_SortedAndRotatedArrayCode {
 
         //mid on Line 1 
         if (arr[si] <= arr[mid]) {
+
             //case a : Left  
             if (arr[si] <= target && target <= arr[mid]) {
                 search(arr, target, si, mid - 1);
@@ -24,7 +25,9 @@ public class DC_03_SortedAndRotatedArrayCode {
             else {
                 search(arr, target, mid + 1, ei);
             }
+
         } //mid on Line 2
+
         else {
             //case c : Right  
             if (arr[mid] <= target && target <= arr[ei]) {
@@ -34,6 +37,7 @@ public class DC_03_SortedAndRotatedArrayCode {
                 search(arr, target, si, mid - 1);
             }
         }
+
         return 0;
     }
 
