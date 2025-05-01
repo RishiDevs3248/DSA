@@ -6,6 +6,7 @@ public class B_01_BacktrackingOnArray {
             System.out.println();
             return;
         }
+        
         //kaam
         arr[i] = val;
         Change(arr, i+1, val+1);
@@ -17,7 +18,6 @@ public class B_01_BacktrackingOnArray {
             System.out.print(arr[i] + " ");
         }
     }
-    
     public static void main(String[] args) {
         int arr[] = new int[5];
         Change(arr, 0, 1);
