@@ -43,7 +43,6 @@ public class Al_01_Basics {
 
 
         //Contains
-
         System.out.println(arr.contains(10));
         System.out.println(arr.contains(0));
 
