@@ -51,7 +51,7 @@ public class Al_01_Basics {
         System.out.println("Size of array: "+arr.size());
 
 
-        // prin reverse of array list
+        // print reverse of array list
         System.out.print("Reverse array: ");
         for (int i = arr.size()-1; i >=0; i--) {
             System.out.print(arr.get(i)+" ");
