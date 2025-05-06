@@ -1,9 +1,7 @@
 
 import java.util.ArrayList;
 
-
-
-public class Al_01_Basics {
+public class AL_01_Basics {
     public static void main(String[] args) {
         // it can only store non primitive type of data 
         
