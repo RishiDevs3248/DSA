@@ -15,5 +15,6 @@ public class AL_08_PairSum2 {
         arr.add(5);
         arr.add(6);
 
+        
     }
 }
