@@ -7,6 +7,5 @@ public class B_01_BitwiseOperator {
         // ~ - NEGATION
         // << - Left shift
         // >> - Right shift
-
     }    
 }
