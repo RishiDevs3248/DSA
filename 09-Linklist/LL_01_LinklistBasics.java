@@ -179,7 +179,7 @@ public class LL_01_LinklistBasics {
 
 
 
-    
+
     // Print linklist
     public void printLL() {
         Node temp = head;
@@ -194,7 +194,47 @@ public class LL_01_LinklistBasics {
 
 
 
+        // itrative serch
+    public int itrSearch(int key){
+        Node temp = head;
+        int i = 0 ;
+        while (temp != null){
+            if(temp.data == key){
+                return i; 
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
     
+
+
+
+
+    // recursive serch
+    public void recSearch(int key , Node node){
+        //base case
+        if(node == null){
+            System.out.println("element not found ");
+            return ;
+        }
+
+        // if element found
+        if(node.data == key){
+            System.out.println("element found");
+            return ; 
+        }
+
+        //reccursive call
+        recSearch(key, node.next);
+    }
+    
+
+
+
+
+
     public static void main(String[] args) {
         LL_01_LinklistBasics ll = new LL_01_LinklistBasics();
         ll.addFirst(3);
@@ -224,5 +264,13 @@ public class LL_01_LinklistBasics {
         ll.printLL();
         System.out.println();
         System.out.println("size : "+ll.size);
+
+
+        // itrative serch
+        System.out.println("found at idx : "+ll.itrSearch(5));
+
+        //reccursive search
+        ll.recSearch(4, head);
+        ll.recSearch(40, head);
     }
 }
