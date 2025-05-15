@@ -233,6 +233,46 @@ public class LL_01_LinklistBasics {
 
 
 
+    // reverse an linklist ------------------------------------
+    public void reverseLL(){
+         Node prev = null;
+         Node curr = tail = head;
+         Node next ;
+
+         while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next; 
+         }
+
+         head = prev;
+
+    }
+
+
+
+
+
+    // Remove n th node from the linklist 
+    public void remoneNthNode(int idx){
+        int i  = 0  ;
+        Node ithNode = head;
+        Node prevNode = null;
+
+        while (i < idx){
+            i++;
+            prevNode = ithNode;
+            ithNode=ithNode.next;
+        }
+
+        prevNode.next = ithNode.next;
+        ithNode.next = null;
+    }
+
+
+
+
 
 
     public static void main(String[] args) {
@@ -272,5 +312,16 @@ public class LL_01_LinklistBasics {
         //reccursive search
         ll.recSearch(4, head);
         ll.recSearch(40, head);
+
+
+        // reverse linklist 
+        ll.reverseLL();
+        ll.printLL();
+
+
+        // remove nth node 
+        System.out.println();
+        ll.remoneNthNode(2);
+        ll.printLL();
     }
 }
