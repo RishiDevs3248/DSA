@@ -274,6 +274,50 @@ public class LL_01_LinklistBasics {
 
 
 
+    // Check if ll is a palindrome 
+    public boolean ispalindrome(){
+        if (head == null || head.next == null){
+            return true;
+        }
+
+        // step 1 - find the mid 
+        // 2 pointer - slow fast technique 
+        Node p1 = head ,p2 = head;
+        while (p2 != null && p2.next !=null){ // 2 condition p2 != null -> for even no of node ,  p2.next != null -> for odd no of node
+            p1 = p1.next; // +1 
+            p2 = p2.next.next; // +2
+        }
+
+        // step 2 - reverse the second half of ll
+        Node prev = null;
+        Node curr = p1;
+        Node next ;
+
+        while(curr != null){
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next; 
+        }
+
+        Node RightHalfHead = prev;
+        Node LeftHalfHead = head;
+ 
+        // compare
+        while (RightHalfHead != null){
+            if (LeftHalfHead.data != RightHalfHead.data){
+                return false;
+            }
+            LeftHalfHead = LeftHalfHead.next;
+            RightHalfHead = RightHalfHead.next;
+        }
+
+        return true;
+    }
+
+
+
+
 
     public static void main(String[] args) {
         LL_01_LinklistBasics ll = new LL_01_LinklistBasics();
@@ -323,5 +367,21 @@ public class LL_01_LinklistBasics {
         System.out.println();
         ll.remoneNthNode(2);
         ll.printLL();
+
+
+
+
+        // is palindrome 
+         LL_01_LinklistBasics ll2 = new LL_01_LinklistBasics();
+        ll2.addFirst(3);
+        ll2.addFirst(2);
+        ll2.addFirst(1);
+        ll2.addFirst(1);
+        ll2.addFirst(2);
+        ll2.addFirst(3);
+
+        System.out.println();
+        System.err.println("is ll 1 a palindrome: "+ll.ispalindrome());
+        System.err.println("is ll 2 a palindrome: "+ll2.ispalindrome());
     }
 }
