@@ -385,3 +385,4 @@ public class LL_01_LinklistBasics {
         System.err.println("is ll 2 a palindrome: "+ll2.ispalindrome());
     }
 }
+
