@@ -19,7 +19,6 @@ public class Str_08_StringCompression {
         return sb.toString();
     }
 
-    
     public static void main(String[] args) {
         String str = "aaabbbcddeeee";
         System.out.println(strCompression(str));
