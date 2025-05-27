@@ -48,7 +48,7 @@ public class Arr2D_04_SpiralMatrix {
             {16,17,18,19,20},
             {21,22,23,24,25}
         };
-        // spiralPrint(arr1);
+        spiralPrint(arr);
         spiralPrint(arr2);
     }
 }
