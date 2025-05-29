@@ -12,5 +12,6 @@ public class B_01_BitwiseOperator {
         // << - Left shift
 
         // >> - Right shift
+        
     }    
 }
